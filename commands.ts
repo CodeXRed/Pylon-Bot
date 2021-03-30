@@ -14,7 +14,8 @@ export const commands = {
       Settings.channels.suggestions
     ],
     rolesDisallowed: [],
-    rolesNeeded: [Settings.roles.verified]
+    rolesNeeded: [Settings.roles.verified],
+    responseString: new discord.Embed({ title: '**What do you need help with**?', description: `\n**Roles:** ${discord.decor.Emojis.ONE}\n**Channels:** ${discord.decor.Emojis.TWO}\n**Rules:** ${discord.decor.Emojis.THREE}\n\n*React with the corresponding emoji of what you need help with! If what you need help with is not listed, contact a staff member.*\n\nUsed by ${message.author.getTag()}` })
   },
   addRoleCommand: {
     enabled: true,
